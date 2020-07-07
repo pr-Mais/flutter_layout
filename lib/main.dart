@@ -80,19 +80,15 @@ class Ex3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
+        Expanded(child: Box()),
+        Spacer(),
         Box(),
-        Box(),
-        Box(),
-        Box(),
-        Box(),
-        Box(),
-        Box(),
-        Box(),
-        Box(),
-        Box(),
-        Box(),
-        Box(),
-        Box(),
+        Spacer(),
+        Flexible(
+          flex: 2,
+          fit: FlexFit.tight,
+          child: Box(),
+        ),
       ],
     );
   }
